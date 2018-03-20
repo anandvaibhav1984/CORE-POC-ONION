@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\AppParamViewModel.cs" />
+    <Compile Remove="Models\GetLocationAndPartMappingViewModel.cs" />
+    <Compile Remove="Models\TestExpressionViewModel.cs" />
+    <Compile Remove="Models\usp_GetLocationAndPartMappingViewModel.cs" />
+    <Compile Remove="Models\usp_GetTestMasterByTestIdViewModel.cs" />
+    <Compile Remove="Services\AppParameterService.cs" />
+    <Compile Remove="Services\LocationMasterService .cs" />
+    <Compile Remove="Services\PartMasterService .cs" />
+    <Compile Remove="Services\TestExpressionService.cs" />
+    <Compile Remove="Services\TestMasterMappingService.cs" />
+    <Compile Remove="Services\TestService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="FluentValidation.WebApi" Version="7.0.0" />
+    <PackageReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cBaseQMS.Core.DAL\cBaseQMS.Core.DAL.csproj" />
+    <ProjectReference Include="..\cBaseQms.Core.Repositry\cBaseQms.Core.Repositry.csproj" />
+  </ItemGroup>
+
+</Project>

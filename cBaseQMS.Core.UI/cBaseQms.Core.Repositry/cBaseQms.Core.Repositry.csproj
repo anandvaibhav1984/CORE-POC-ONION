@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Infrastructure\DbFactory.cs" />
+    <Compile Remove="Infrastructure\IDbFactory.cs" />
+    <Compile Remove="Infrastructure\IUnitOfWork.cs" />
+    <Compile Remove="Infrastructure\UnitOfWork.cs" />
+    <Compile Remove="Repositories\AppParameterRepository.cs" />
+    <Compile Remove="Repositories\ComponentRepositry.cs" />
+    <Compile Remove="Repositories\EquationRepositry.cs" />
+    <Compile Remove="Repositories\LocationMasterRepositry .cs" />
+    <Compile Remove="Repositories\PartAttributesRepository.cs" />
+    <Compile Remove="Repositories\PartMasterRepositry.cs" />
+    <Compile Remove="Repositories\TestCalculatedFieldsRepository.cs" />
+    <Compile Remove="Repositories\TestExpressionRepository.cs" />
+    <Compile Remove="Repositories\TestInputFieldsRepositry.cs" />
+    <Compile Remove="Repositories\TestMasterMappingRepositry.cs" />
+    <Compile Remove="Repositories\TestRepositry.cs" />
+    <Compile Remove="Repositories\VWLocationAttributesRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cBaseQMS.Core.DAL\cBaseQMS.Core.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
